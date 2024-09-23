@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yew To-Do App</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            width: 70%;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        li span {
+            flex-grow: 1;
+            text-align: left;
+            margin-left: 10px;
+        }
+        li button {
+            margin-left: 10px;
+        }
+    </style>
+
+<link rel="modulepreload" href="/yew-todo-4c7051e159832a86.js" crossorigin=anonymous integrity="sha384-52MEhSmfBtu/nS169WjyJG3KHd3kkHzii+NqucSH0uF3LL0M/FwLyJnPiNBOoagG">
+<link rel="preload" href="/yew-todo-4c7051e159832a86_bg.wasm" crossorigin=anonymous integrity="sha384-XXTtE/znKzVyJDJRmu9sxitZXayfpD+CdxK9FP+tegsDG5aei0aeD9fa393tO4FX" as="fetch" type="application/wasm"></head>
+<body>
+    <div id="root"></div>
+
+<script type="module" nonce="YjVdlFMheP3dgQLZosxMgg==">
+import init, * as bindings from '/yew-todo-4c7051e159832a86.js';
+const wasm = await init('/yew-todo-4c7051e159832a86_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
